@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ept-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Caprasimo&family=Pacifico&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho"> <!--para o cabeçalho acompanhar a rolagem da página e depois p-4 é o espacç entre o texto e a borda inferior-->
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Cantinho da Fragrância</h1> <!--m-0 valor adicionado para o título ficar centralizado na horizontal-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"> <!--botão do menu amburguer e a class faz ocultar o botão e só aparece com a tela menor-->
+                <span class="navbar-toggler-icon"></span> <!--class que faz o botão ficar com as listinhas no meio-->
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao"><!--aparece o botão com a tela do site pequena oculta o menu e só aparece quando maximizar ou clicar no botão menu-->
+                <ul class="nav nav-pills d-block d-md-flex"> <!--menu um do lado do outro,'colado' e já tira o pontinho, d-block faz o meu ficar um debaixo do outro na tela pequena-->
+                    <li class="nav-item fw-bold"> <!--adicionamos fw-bold para por o text em negrito--> <!--menu com aparência de botão-->
+                        <a href="#sobre-o-espaço" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i><!--link do house door do bootstrap que faz aparecer a casinha e o me éuma class adicionada para dar espaço entre a casinha e o 'sobre o restaurante'-->
+                            Sobre o Espaço <!--me-1 siginifica margin-end na css e vai até o 5-->
+                        </a> <!--aparência do botão funcionar-->
+                    </li>
+                    <li class="nav-item fw-bold"> <!--adicionamos fw-bold para por o text em negrito-->
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-brush"></i><!--calendar-check, ícone do calendario ao lado de 'eventos'-->
+                            </i>
+                            Produtos
+                        </a>
+                    </li>                   
+                    </li>
+                    <li class="nav-item fw-bold"> <!--adicionamos fw-bold para por o text em negrito-->
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i> <!--chat-left-text, ícone de mensagem ao lado de fale conosco-->
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-espaço">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel"> <!--atributo para afzer mudar de imagem automaticamente-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="20230220_090245.jpg" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="20230220_091423.jpg" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="20230223_101546.jpg" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators"> <!--tracinhos em baixo que também servem para mudar de imagem-->
+                    <buttom type="buttom" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></buttom>
+                    <buttom type="buttom" data-bs-target="#carousel" data-bs-slide-to="1"></buttom>
+                    <buttom type="buttom" data-bs-target="#carousel" data-bs-slide-to="2"></buttom>
+                </div>
+            </div>
+            <div class="pt-5 pb-5"> <!--distância entre a imagem e o carousel-->
+                <div class="container row">
+                    <div class="col-md-5">
+                        <img src="20221215_180543.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="col-7 mt-3 mt-md-0"> <!-- mt-3 espaço entre a imagem e a seção sobre o restaurante na versão celular (mt-md-0) celular, título da seção ficar na mesma linha da imagem-->
+                        <h2 class="section-title">Sobre <span class="text-colored">a loja</span></h2>
+                        <p>
+                            Você encontra na Loja Cantinho da Fragrância produtos de Beleza, Cosméticos e Perfumaria. Site 100% Seguro, Marcas Exclusivas, 10x Sem Juros✓                   </p>
+                        <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3> <!--fonte das seções-->
+                        <p>
+                            Somos uma Loja completa, com espaço amplo e agradável, com uma grande varidade em produtos, marcas super recomendadas, dispomos de fragrâncias incríveis que se encaixam perfeitamente ao seu gosto.  
+                        </p>
+                        <ul>
+                            <li>Perfumes</li>
+                            <li>Cosméticos</li>
+                            <li>Maquiagem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5"> <!--distância entre a seção e a imagem de cima-->
+            <div class="container">
+                <div class="row"> <!--uma linha-->
+                    <h2 class="section-title text-center">Uma Fragrância <span class="text-colored">para cada ocasião</span> </h2> <!--text-center para centralizar o título da seção-->
+                </div>
+                <div class="row mt-4"> 
+                    <div class="col-md-4">
+                        <img src="https://static.natura.com/cdn/ff/Pmd06k3QxWqu1_u_ZAytF14yJPF-MC3bDmnXhKgq1ZU/1632864505/public/2021-09/56417_beneficios.jpg" alt="" class="d-block w-100 rounded mb-2"> <!--largura, borda arredondada e distância entre as imagens e os títulos emcima e baixo-->
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart"></i><!--ícone ao lado da seção 'aniversários'-->
+                                Encontros Românticos
+                            </h3>
+                        <p>
+                            Chipre adocicado moderado.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://static.natura.com/cdn/ff/2zVZxsL6YoxdmsDCCc2zbiWPGB6Kw-BvlPsa0m1x6Vs/1626121998/public/2021-07/83314_caminho_olfativo.jpg" alt="" class="d-block w-100 rounded mb-2"> <!--largura e borda-->
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-pc-display-horizontal"></i><!--ícone ao lado da seção 'recepções'-->
+                                Trabalho
+                            </h3>
+                        <p>
+                            Floral intenso. A cremosidade das flores brancas contrastada com notas adocicadas de fava-tonca e um toque de café arábica.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://static.natura.com/cdn/ff/IqTEq_ItoLklg8aQSNONOlpz7W0YVVq7FOOZVelvVGM/1674752769/public/2023-01/Benefi%CC%81cios_76423.jpg" alt="" class="d-block w-100 rounded m-2"> <!--largura e borda-->
+                        <h3 class="section-title text-colored fs-4"> <!--cor das subseções-->
+                            <i class="bi bi-people-fill"></i><!--ícone ao lado da seção 'confraternizações'-->
+                                Dia-a-dia
+                            </h3>
+                        <p>
+                            Floral Intenso.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="row">
+                <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mb-5"><!--espaço entre botão enviar e redes sociais-->
+                    <form>
+                        <div class="mb-3 ml-8"> <!--espaço entre os campos   -->
+                            <label for="nome" class="form-label fw-bold text-colored">Nome</label>
+                            <input type="text" id="nome" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                            <input type="tel" id="telefone" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                            <textarea class="form-control" id="mensagem" required></textarea>
+                        </div>
+                        <button type="submite" class="btn fw-bold">Enviar</button>
+                    </form>
+                </div>
+                <div class="col md-5">
+                    <div class="row">
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-hand-thumbs-up-fill"></i> <!--ícone de de joinhanas redes sociais-->
+                            Redes sociais
+                        </h3> <!--fs-4 para diminuir o tamanho da fonte do texto 'redes sociais'-->
+                        <ul class="social-links">
+                            <li class="fs-5"> <!--fs-5 para aumentar um pouco o tamanho do ícone das redes sociais-->
+                                <a href="#">
+                                    <i class="bi bi-facebook text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5 ms-1 me-1"> <!--ms espaço à esquerda, me espaço à direita-->
+                                <a href="#">
+                                    <i class="bi bi-instagram text-colored"></i>
+                                </a>
+                            </li>
+                            <li class="fs-5">
+                                <a href="#">
+                                    <i class="bi bi-whatsapp text-colored"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mt-4"> <!--mt-4 para distanciar a seção de endereço de redes sociais-->
+                        <h3 class="section-title fs-4 text-colored">
+                            <i class="bi bi-cursor-fill"></i> <!--ícone de cursor no endereço-->
+                            Endereço
+                        </h3>
+                        <p>
+                            Rua Humberto de Campos nº93, Bairro Portinho - Peri-Mirim -
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

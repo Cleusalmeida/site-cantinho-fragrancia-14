@@ -1,0 +1,71 @@
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.navbar {
+    background-color: #41c9e1;
+}
+
+.container img {
+    width: 100px;
+    height: 400px;
+}
+
+section img{
+    width: 1400px;
+    height: 1400px;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+    color: #41c9e1;
+}
+
+#cabecalho .nav .nav-link, /*#cabecalho, para poder aparecer os demais submenus da seção 'cardápio'*/
+.navbar-brand, 
+.navbar-brand:hover, /*parar de trocar a cor do texto do título quando passar o maouse*/
+.nav-cardapio .nav-link.active:hover { /*texto dentro botão ficar branco*/
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #ffeae6; /*cor do botão menu*/
+}  
+
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+#sobre-o-restaurante, #cardapio {
+    background-color: #ffeae6; /*cor de fundo das seções*/s
+}
+
+.text-colored {
+    color:  #41c9e1;/*cor das subseções*/
+
+}
+
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #41c9e1; /* cor de fundo dos botões bebidas não alcoólicas...*/
+    counter-reset: #fff;
+}
+
+.nav-cardapio .nav-link:hover { /*para com o evento de trocar de cor ao clicar com mouse*/
+color: #41c9e1;
+}
+
+.social-links li {
+    list-style: none; /*remover os banets das linhas*/
+    display: inline; /*para ficar um do lado do outro*/
+}
+
+.social-links a {
+    text-decoration: none; /*para tirar o anderline azul que tinha ficado entre os ícones das redes sociais*/
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+    }
+}
